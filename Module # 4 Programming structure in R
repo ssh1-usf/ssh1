@@ -1,0 +1,27 @@
+#The following data was collected by the local hospital. This data set contains 5 variables based on observation of 8 patients. In addition to the measurements of the patients checking in to the hospital that night, 
+#this data provides the patients' histories regarding the frequency of their visits to the hospital in the last 12 months.
+freq <-c(.6,.3,.4,.4,.2,.6,.3,.4,.9,.2)
+bp <-c(103,87,32,42,59,109,78,205,135,176)
+#This data displays the measurement of blood pressure, first assessment by general doctor (bad=1, good =0) titled "first,"
+first <-c(1,1,1,1,0,0,0,0,NA,1)
+#the second assessment by external doctor (called "second")
+second <-c(0,0,1,1,0,0,1,1,1,1)
+# and the last row provides the head of the emergency unit's decision regarding immediate care for the patient based on the values 0 or 1 (low = 0, high =1)
+finaldecision <-c(0,1,0,1,0,1,0,1,1,1)
+#side-by-side boxplot
+boxplot.default(bp,
+                xlab="Blood Pressure",
+                ylab="Blood Pressure Reeading (mmHg)")
+boxplot.default(freq,
+                xlab="Frequency",
+                ylab="Frequency of their visits to the hospital")
+#histogram
+hist(bp,
+     xlab="Blood Pressure",
+     ylab="Frequency of that Blood Pressure")
+hist(freq,
+     xlab="Frequency of their visits to the hospital",
+     ylab="Frequency of number of visits")
+hist(first)
+hist(second)
+hist(finaldecision)
