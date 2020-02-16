@@ -1,0 +1,31 @@
+A <- matrix(1:100, nrow=10)  
+B <- matrix(1:1000, nrow=10)
+detA <- det(A)
+detB <- det(B)
+InverseA <- solve(A)
+InverseB <- solve(B)
+print(detA)
+print(detB)
+print(InverseA)
+print(InverseB)
+
+> A <- matrix(1:100, nrow=10)  
+> B <- matrix(1:1000, nrow=10)
+> detA <- det(A)
+> detB <- det(B)
+Error in determinant.matrix(x, logarithm = TRUE, ...) : 
+  'x' must be a square matrix
+> InverseA <- solve(A)
+Error in solve.default(A) : 
+  Lapack routine dgesv: system is exactly singular: U[6,6] = 0
+> InverseB <- solve(B)
+Error in solve.default(B) : 'a' (10 x 100) must be square
+> print(detA)
+[1] 0
+> print(detB)
+Error in print(detB) : object 'detB' not found
+> print(InverseA)
+Error in print(InverseA) : object 'InverseA' not found
+> print(InverseB)
+Error in print(InverseB) : object 'InverseB' not found
+> 
