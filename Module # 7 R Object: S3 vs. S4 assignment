@@ -1,0 +1,14 @@
+S31 <- list(gender = "male", minor = FALSE, age = 26)
+
+S32 <- list(car = "Mazda RX4", mpg = 21.0, cyl = 6)
+
+S41 <- setClass("S41",slots = c(name="character", age="numeric"))
+me <- new("S41",name="me",age=26)
+
+S42 <- setClass("S42",slots = c(name="character", mpg="numeric"))
+Mazda<- new("S42",name="Mazda RX4",mpg=21.0)
+
+S31
+S32
+me 
+Mazda
