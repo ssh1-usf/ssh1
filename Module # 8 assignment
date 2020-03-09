@@ -1,0 +1,11 @@
+install.packages("pryr")
+library(plyr)
+library(reshape2)
+SA6<- read.csv("Assignment 6 Dataset.txt", header = TRUE)
+sexSum = ddply(SA6,"Sex",summarise,Grade.Average=mean(Grade))
+write.table(sexSum, "Students_Gendered_Mean")
+i_students <- subset(SA6, grepl("i", SA6$Name, ignore.case=T))
+write.csv(i_students,"i_students")
+SA6
+sexSum
+i_students
