@@ -1,0 +1,8 @@
+Package: Array Manipulation
+Title: Moves Contents from Adjacent Column to the Next Row
+Version: 0.0.0.9000
+Authors@R: "Syed Hussain <ssh1@mail.usf,edu> [aut, cre]"
+Description: This function transforms a 2 column array into a single column by copying the cell in the adjacent column to the adjacent cell in the next Row
+Depends: R (>= 3.6.3)
+License: CC0 1.0
+LazyData: true
