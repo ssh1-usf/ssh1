@@ -1,0 +1,19 @@
+---
+title: 'Module # 12 Markdown'
+output: word_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Markdown of Cars
+
+```{r cars}
+summary(cars)
+```
+
+## Pressure Plot
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
